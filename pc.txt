@@ -1,0 +1,10 @@
+header
+    work day scheduler
+table
+    times 9-5
+    text input that can be saved locally
+    save button
+        box color changes depending on time
+            red for past hour blocks
+            green for current block
+            blue for future blocks
