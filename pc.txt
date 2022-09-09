@@ -8,3 +8,9 @@ table
             red for past hour blocks
             green for current block
             blue for future blocks
+
+
+            $("#hour-09 .description").val(localStorage.getItem("hour-09"))??
+            idk the logic, need to set first
+            localStorage.
+            
