@@ -1,8 +1,8 @@
 var showDay = moment().format('LLLL');
 $('#currentDay').text(showDay);
-
+var savedMsg = $("#saved-local-msg");
 var currentHour = moment().hours();
-// var currentHour = parseInt("12")
+// var currentHour = 12;
 console.log(currentHour)
 
 $(document).ready(function(){
@@ -10,6 +10,8 @@ $(document).ready(function(){
         var value = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
         localStorage.setItem(time, value);
+        savedMsg.html("Your content added with <code>localStorage</code> ✅");
+        savedMsg.attr("style", "text-align: center; font-size: 12px");
     });
     $("#hour-09 .description").val(localStorage.getItem("hour-09"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
